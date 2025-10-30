@@ -2,7 +2,6 @@ import time
 import inquirer
 from inquirer.themes import BlueComposure
 from rich.progress import Progress, SpinnerColumn, BarColumn, TextColumn
-from rich.progress import Progress, BarColumn, TextColumn
 from rich.console import Console
 
 console = Console()
@@ -10,7 +9,7 @@ console = Console()
 
 def show_intro_banner():
     console.print("""
-[bold cyan]🐃 BuffTeks Commit Ritual[/]
+[bold cyan]BuffTeks Commit Ritual[/]
 [bold gold3]────────────────────────────────────────[/]
 [#C0C0C0]Welcome to the digital rite of passage.
 Every contribution is part of our legacy.[/]

@@ -1,11 +1,9 @@
-import re
-import requests
 from pathlib import Path
 from datetime import datetime
 from ritual.ui import console
 from rich.table import Table
 
-from ritual.validator import _is_valid_name, fetch_github_name
+from ritual.validator import fetch_github_name
 
 README_PATH = Path("README.md")
 
@@ -68,7 +66,8 @@ def add_to_hall_of_fame(username: str, fullname: str):
     # Prevent duplicate entries
     if f"@{val_username}" in text.lower():
         console.print(
-            f"[yellow]🫸  A BuffTeks contributor with the GitHub username of: {username} is already in the Hall of Fame![/]")
+            f"[yellow]🫸  A BuffTeks contributor with the GitHub username of: {username} "
+            "is already in the Hall of Fame![/]")
         console.print(
             "[cyan1]   - Please stage and commit changes to proceed into pushing your contribution to our repository! 🔥[/]")
 
@@ -93,7 +92,12 @@ def add_to_hall_of_fame(username: str, fullname: str):
     tmp_path.replace(README_PATH)
 
     console.print(
-        f"""[#C0C0C0]==========================================================================[/]\n[gold3]🔥 {name} has been successfully added to the BuffTeks Hall of Fame! 🎉[/]\n[#C0C0C0]==========================================================================[/]""")
+        "[#C0C0C0]==========================================================================[/]")
+    console.print(
+        f"\n[gold3]🔥 {name} has been successfully added to the BuffTeks Hall of Fame! 🎉")
+    console.print(
+        "[#C0C0C0]==========================================================================[/]")
+
     return True
 
 

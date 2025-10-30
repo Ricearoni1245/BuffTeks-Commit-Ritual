@@ -1,5 +1,6 @@
 import shutil
 import sys
+import importlib.util
 import requests
 from rich.table import Table
 from ritual.ui import console
@@ -68,13 +69,13 @@ def _test_dependencies():
     Returns:
         bool: True if all dependencies are present, False otherwise.
     """
-    try:
-        import rich
-        import inquirer
-        return True
-    except ImportError as e:
-        console.print(f"[red3]Missing dependency:[/] {e.name}")
-        return False
+    dependencies = ["inquirer", "requests", "rich"]
+    all_found = True
+    for dep in dependencies:
+        if importlib.util.find_spec(dep) is None:
+            console.print(f"[red3]Missing dependency:[/] {dep}")
+            all_found = False
+    return all_found
 
 
 def _is_valid_name(name: str, username: str) -> bool:
