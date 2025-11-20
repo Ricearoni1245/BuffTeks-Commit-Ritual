@@ -73,6 +73,7 @@ buffteks-commit-ritual/
 | ------------ | -------------------------------------------- | ---------- |
 | Seth Crump | [@scrump05](https://github.com/scrump05) | 2025-10-28 |
 | Benjamin Mosley | [@benny-ui-ux](https://github.com/benny-ui-ux) | 2025-11-10 |
+| Abubacar "AD" Diallo | [@ad1135773](https://github.com/ad1135773) | 2025-11-20 |
 
 ---
 
