@@ -44,6 +44,85 @@ buffteks-commit-ritual/
 
 ````
 
+
+## 🔧 Environment Setup (Windows, macOS, Linux)
+
+To ensure everyone can run the Commit Ritual smoothly, follow these steps to create a **Python virtual environment**, install dependencies, and run the application.
+
+This keeps your environment clean and prevents dependency conflicts.
+
+### 🪟 Windows Setup (PowerShell)
+
+```powershell
+# 1. Navigate to project folder
+cd buffteks-commit-ritual
+
+# 2. Create a virtual environment
+python -m venv venv
+
+# 3. Activate virtual environment
+.env\Scripts\Activate
+
+# 4. Install dependencies
+pip install -r requirements.txt
+
+# 5. Run the ritual
+python main.py
+```
+
+### 🍎 macOS Setup (Terminal)
+
+```bash
+# 1. Navigate to project folder
+cd buffteks-commit-ritual
+
+# 2. Create a virtual environment
+python3 -m venv venv
+
+# 3. Activate virtual environment
+source venv/bin/activate
+
+# 4. Install dependencies
+pip install -r requirements.txt
+
+# 5. Run the ritual
+python main.py
+```
+
+### 🐧 Linux Setup (Ubuntu/Debian/Fedora/Arch)
+
+```bash
+# 1. Navigate to project folder
+cd buffteks-commit-ritual
+
+# 2. Create a virtual environment
+python3 -m venv venv
+
+# 3. Activate virtual environment
+source venv/bin/activate
+
+# 4. Install dependencies
+pip install -r requirements.txt
+
+# 5. Run the ritual
+python main.py
+```
+
+### ❗ Important Notes
+
+- You **must activate** the virtual environment every time you run the ritual.
+    
+- To **exit** the virtual environment:
+    
+    ```bash
+    deactivate
+    ```
+    
+- If `python` doesn’t work, try `python3`.
+    
+- If `pip` doesn’t work, try `pip3`.
+
+
 ---
 
 ## 🚀 How It Works
