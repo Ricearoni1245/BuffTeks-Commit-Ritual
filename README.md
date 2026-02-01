@@ -154,6 +154,7 @@ python main.py
 | Benjamin Mosley | [@benny-ui-ux](https://github.com/benny-ui-ux) | 2025-11-10 |
 | Abubacar "AD" Diallo | [@ad1135773](https://github.com/ad1135773) | 2025-11-20 |
 | Haylee Torres | [@htorres38](https://github.com/htorres38) | 2025-12-02 |
+| Jody Holt | [@ricearoni1245](https://github.com/ricearoni1245) | 2026-01-31 |
 
 ---
 
